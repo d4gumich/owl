@@ -1,3 +1,10 @@
+# Author: Sara Haptonstall
+# Date: 2025-02-06
+# AI power Q&A bot that uses 3000 pdf files ReliefWeb (https://apidoc.reliefweb.int/) reports to crate a RAG model.
+
+
+
+
 import os
 import streamlit as st
 import requests
