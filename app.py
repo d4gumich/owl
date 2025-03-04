@@ -1,6 +1,6 @@
 # Author: Sara Haptonstall
 # Date: 2025-02-06
-# AI power Q&A bot that uses 3000 pdf files ReliefWeb (https://apidoc.reliefweb.int/) reports to crate a RAG model.
+# AI power Q&A bot that uses 2406 pdf files ReliefWeb (https://apidoc.reliefweb.int/) reports to create a RAG model.
 
 
 
