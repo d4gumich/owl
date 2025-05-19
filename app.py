@@ -18,6 +18,7 @@ st.subheader("_Unlock Insights with AI-Powered Assistance_", divider=True)
 # Sidebar settings
 st.sidebar.image("owl_logo.jpg")
 st.sidebar.header("Settings")
+st.sidebar.markdown("[🌐 Visit Data for Good](https://data4good.center/)", unsafe_allow_html=True)
 
 # Model selection and configuration
 model_options = ["gemini-1.5-flash", "gemini-1.5-flash-8b", "gemini-1.5-pro"]
