@@ -1,23 +1,14 @@
-#streamlit==1.41.0
-#python-dotenv==1.0.1
-#pandas==2.2.3
-#numpy==1.26.4
-#gcsfs==2024.10.0
-#langchain==0.3.11
-#langchain-google-genai==2.0.6
-#langchain-huggingface==0.1.2
-#langchain-chroma==0.1.4
-#chromadb==0.5.18
-#huggingface-hub==0.23.5
-#transformers==4.46.3
-#torch==2.5.1
-#google-generativeai==0.8.0
-#tenacity==8.5.0
-#requests==2.32.3
-#pysqlite3-binary
-streamlit
+#streamlit
+#requests
+#langchain
+#langchain-google-genai
+#google-generativeai
+pydantic>=2.4,<3
+langchain==0.2.**  # e.g., 0.2.16
+langchain-core==0.2.**  # e.g., 0.2.41
+langchain-community==0.2.**
+langchain-google-genai==2.0.7
+streamlit>=1.38
 requests
-langchain
-langchain-google-genai
-google-generativeai
+
 
