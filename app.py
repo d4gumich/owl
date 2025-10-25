@@ -25,7 +25,7 @@ st.subheader("_Unlock Insights with AI-Powered Assistance_", divider=True)
 # Sidebar
 # ----------------------------
 # ✅ Updated to use 'use_container_width' instead of deprecated 'use_column_width'
-st.sidebar.image("owl_logo.jpg", caption="Owl 1.0", use_container_width=True)
+st.sidebar.image("owl_logo.jpg", caption="Owl 1.0")
 st.sidebar.header("Settings")
 st.sidebar.markdown("[🌐 Visit Data for Good](https://data4good.center/)", unsafe_allow_html=True)
 
