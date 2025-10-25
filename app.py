@@ -139,10 +139,14 @@ if submit and query.strip():
                 msg = str(e)
                 if "429" in msg or "quota" in msg.lower():
                     st.error(
-                        "❌ Gemini returned a quota/rate-limiting error. Try Flash/Lite, reduce k, or check your Google Cloud quota."
+                        "❌ Gemini returned a quota or rate-limiting error. "
+                        "Try using Flash/Lite, reduce k, or check your Google Cloud quota."
                     )
+                    st.code(msg, language="text")  # 👈 Show actual error text
                 else:
-                    st.error(f"❌ Error generating response with Gemini: {e}")
+                    st.error("❌ Error generating response with Gemini:")
+                    st.code(msg, language="text")  # 👈 Display the real error message for visibility
+
 
     else:
         st.warning("⚠️ No similar documents found. Try another query or adjust 'k'.")
