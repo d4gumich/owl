@@ -2,6 +2,8 @@
 # Date: 2025-10-25 - revised to remove lang chanin
 # AI power Q&A bot that uses 2406 pdf files ReliefWeb (https://apidoc.reliefweb.int/) reports to create a RAG model.
 
+
+
 # Author: Sara Haptonstall
 # Owl 1.0 – Streamlit app using google-generativeai SDK (no LangChain)
 
@@ -22,7 +24,8 @@ st.subheader("_Unlock Insights with AI-Powered Assistance_", divider=True)
 # ----------------------------
 # Sidebar
 # ----------------------------
-st.sidebar.image("owl_logo.jpg", caption="Owl 1.0", use_column_width=True)
+# ✅ Updated to use 'use_container_width' instead of deprecated 'use_column_width'
+st.sidebar.image("owl_logo.jpg", caption="Owl 1.0", use_container_width=True)
 st.sidebar.header("Settings")
 st.sidebar.markdown("[🌐 Visit Data for Good](https://data4good.center/)", unsafe_allow_html=True)
 
@@ -206,5 +209,3 @@ if submit:
                 st.write(f"**Content Preview:**\n\n{preview}…")
             with right:
                 st.code((doc.get("combined_details") or doc.get("document") or "")[:1800], language="markdown")
-
-
