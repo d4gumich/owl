@@ -3,18 +3,9 @@
 #langchain
 #langchain-google-genai
 #google-generativeai
-# Core
-pydantic>=2.7,<3
-langchain==0.3.*
-langchain-core==0.3.*
-langchain-community==0.3.*
+streamlit>=1.36
+requests>=2.32
+google-generativeai>=0.7.0
 
-# Google / Gemini integration
-langchain-google-genai==3.0.0
-google-generativeai>=0.7.2
-
-# App
-streamlit>=1.38
-requests
 
 
