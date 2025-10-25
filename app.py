@@ -21,7 +21,7 @@ st.sidebar.header("Settings")
 st.sidebar.markdown("[🌐 Visit Data for Good](https://data4good.center/)", unsafe_allow_html=True)
 
 # Model selection and configuration
-model_options = ["gemini-1.5-flash", "gemini-1.5-flash-8b", "gemini-1.5-pro"]
+model_options = ["gemini-2.5-flash-lite", "gemini-2.5-flash", "gemini-2.5-pro"]
 selected_model = st.sidebar.selectbox("Select LLM Model for Answer", model_options, index=0)
 temperature = st.sidebar.slider("Model Temperature", 0.0, 1.0, 0.5, 0.05)
 k = st.sidebar.slider("Number of Similar Documents (k)", 1, 10, 5, 1)
