@@ -51,8 +51,7 @@ def _get_secret(group: str, key: str, env_fallback: str | None = None) -> str | 
         pass
     return os.getenv(env_fallback) if env_fallback else None
 
-SIMILARITY_API_URL = _get_secret("general", "SIMILARITY_API", "SIMILARITY_API") or \
-    "https://similarity-api-559650505418.us-central1.run.app/similarity"
+SIMILARITY_API_URL = _get_secret("general", "SIMILARITY_API", "SIMILARITY_API") 
 GOOGLE_API_KEY = _get_secret("general", "GOOGLE_API_KEY", "GOOGLE_API_KEY")
 
 if not GOOGLE_API_KEY:
@@ -208,9 +207,4 @@ if submit:
             with right:
                 st.code((doc.get("combined_details") or doc.get("document") or "")[:1800], language="markdown")
 
-# Footer help
-with st.expander("Having issues? Click for quick checks"):
-    st.markdown(
-        """
-**Common fixes**
-1. **Secrets** – Add `.streamlit/secrets.toml`:
+
